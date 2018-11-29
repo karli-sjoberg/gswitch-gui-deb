@@ -1,5 +1,5 @@
-gswitch-gui (0.1-5) bionic; urgency=medium
+gswitch-gui (0.2-1) bionic; urgency=medium
 
-  * Added desktop file
+  * Added desktop file and archive version bumped
 
  -- Karli Sjoberg <karli@inparadise.se>  Thu, 29 Nov 2018 13:31:57 +0100
