@@ -1,0 +1,42 @@
+Description: Changed script path
+ Debian adamantly refuses to install files into /usr/local so that
+ had to change.
+ .
+ gswitch-gui (0.1-3) bionic; urgency=medium
+ .
+   * Initial release
+Author: Karli Sjoberg <karli@inparadise.se>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2018-11-29
+
+--- gswitch-gui-0.1.orig/src/mainwindow.cpp
++++ gswitch-gui-0.1/src/mainwindow.cpp
+@@ -23,7 +23,7 @@ void MainWindow::on_pushButton_released(
+ 	ui->pushButton_3->setEnabled(true);
+ 	ui->pushButton_4->setEnabled(true);
+ 	process = new QProcess();
+-	process->start("pkexec /usr/local/bin/gswitch egpu");
++	process->start("pkexec /usr/bin/gswitch egpu");
+ 	process->waitForReadyRead();
+ 	ui->plainTextEdit->appendPlainText(process->readAllStandardOutput());
+ }
+@@ -33,7 +33,7 @@ void MainWindow::on_pushButton_2_release
+ 	ui->pushButton_3->setEnabled(true);
+ 	ui->pushButton_4->setEnabled(true);
+ 	process = new QProcess();
+-	process->start("pkexec /usr/local/bin/gswitch internal");
++	process->start("pkexec /usr/bin/gswitch internal");
+ 	process->waitForReadyRead();
+ 	ui->plainTextEdit->appendPlainText(process->readAllStandardOutput());
+ }

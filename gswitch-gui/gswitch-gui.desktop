@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Gswitch-GUI
+Comment=Friendly GUI to the "gswitch" command to change from internal to external GPU
+Exec=/usr/bin/Gswitch-GUI
+Icon=/usr/share/icons/breeze/apps/48/kdeapp.svg
+Type=Application
+Categories=System;

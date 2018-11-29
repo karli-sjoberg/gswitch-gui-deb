@@ -1,0 +1,2 @@
+bin/Gswitch-GUI usr/bin
+gswitch-gui.desktop usr/share/applications

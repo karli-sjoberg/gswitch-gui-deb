@@ -1,0 +1,12 @@
+Source: gswitch-gui
+Section: utils
+Priority: optional
+Maintainer: Karli Sjoberg <karli@inparadise.se>
+Build-Depends: debhelper (>= 10), libc6, libgcc1, libqt5core5a, libqt5gui5, libqt5widgets5, libstdc++6, qt5-qmake-bin, qt5-qmake, qtbase5-dev-tools, qtbase5-dev
+Standards-Version: 4.1.2
+Homepage: https://github.com/karli-sjoberg/gswitch-gui
+
+Package: gswitch-gui
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libc6, libgcc1, libqt5core5a, libqt5gui5, libqt5widgets5, libstdc++6, gswitch
+Description: Friendly GUI to the "gswitch" command to change from internal to external GPU
