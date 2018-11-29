@@ -1,0 +1,32 @@
+Description: Changed binary path in .desktop file
+ Yeah, forgot about that...
+ .
+ gswitch-gui (0.1-4) bionic; urgency=medium
+ .
+   * Initial release
+Author: Karli Sjoberg <karli@inparadise.se>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2018-11-29
+
+--- gswitch-gui-0.1.orig/gswitch-gui.desktop
++++ gswitch-gui-0.1/gswitch-gui.desktop
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ Name=Gswitch-GUI
+ Comment=Friendly GUI to the "gswitch" command to change from internal to external GPU
+-Exec=/usr/local/bin/Gswitch-GUI
++Exec=/usr/bin/Gswitch-GUI
+ Icon=/usr/share/icons/breeze/apps/48/kdeapp.svg
+ Type=Application
+ Categories=System;
