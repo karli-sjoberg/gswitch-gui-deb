@@ -8,5 +8,5 @@ git clone https://github.com/karli-sjoberg/gswitch-gui-lp</br>
 cd gswitch-gui-lp/gswitch-gui</br>
 dpkg-buildpackage</br>
 cd ..</br>
-sudo dpkg -i *.deb</br>
-rm -rf gswitch*</br>
+sudo dpkg -i \*.deb</br>
+rm -rf gswitch\*</br>
