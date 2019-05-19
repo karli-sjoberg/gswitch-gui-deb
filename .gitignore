@@ -1,0 +1,5 @@
+gswitch-gui/debian/files
+gswitch-gui/debian/.debhelper
+gswitch-gui/debian/debhelper-build-stamp
+gswitch-gui/debian/gswitch.substvars
+gswitch-gui/debian/gswitch
